@@ -1,16 +1,16 @@
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ShopPage from "./components/ShopPage";
+import Store from "./components/Store";
 
 const App = () => {
   return (
     <>
-    <Navbar />
+      <Navbar />
       <BrowserRouter>
         <Routes>
           <Route path="/" Component={Home} />
-          <Route path="/ShopPage" Component={ShopPage} />
+          <Route path="/store" Component={Store} />
         </Routes>
       </BrowserRouter>
     </>
