@@ -1,7 +1,11 @@
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+
 const App = () => {
   return (
-    <div>
-      <h1>Hello from App</h1>
+    <div className="main-page">
+      <Navbar />
+      <Home />
     </div>
   );
 };
