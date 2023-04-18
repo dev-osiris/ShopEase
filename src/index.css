@@ -37,6 +37,7 @@ code {
 }
 
 a:link{
+  /* removes underline from hyperlinks */
   text-decoration: none;
 }
 
@@ -46,4 +47,19 @@ a:hover{
 
 .home{
   padding: 0 10%;
+}
+
+.store-btn{
+  border-radius: 10%;
+  background-color:#1A120B;
+  color: white;
+  font-size: large;
+  width: 6.5em;
+  height: 2.5em;
+}
+
+.store-btn:hover{
+  background-color:#ececd2;
+  color:#1A120B;
+  transition: 0.3s;
 }

@@ -3,7 +3,7 @@ const Home = () => {
       <div className="home">
         <h1>Hello from Home component</h1>
         <a href="/store">
-          <button className="shop-btn">Shop Now</button>
+          <button className="store-btn">Shop Now</button>
         </a>
       </div>
     );
