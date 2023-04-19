@@ -3,11 +3,15 @@ import Item from "./Item";
 
 function DisplayItems(props){
     return(
-        props.items.map(item => {
-            return(
-                <Item product={item} Click={props.handleOnClick}/>
-            )
-        })
+        <div className="items-container">
+            {
+                props.items.map(item => {
+                    return(
+                        <Item product={item} Click={props.handleOnClick}/>
+                    )
+                })
+            }
+        </div>
     )
 }
 
