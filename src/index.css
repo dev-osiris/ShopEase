@@ -15,20 +15,21 @@ code {
 
 .navbar {
   display: flex;
-  padding: 1% 10%;
+  padding: 2% 10%;
   background-color: #1A120B;
   color: white;
 }
 
 .title{
-  font-size: x-large;
+  font-size: xx-large;
   color: white;
 }
 
 .links{
   display: flex;
-  margin: 0 5% 0 85%;
+  margin: 0 5% 0 75%;
   justify-content: space-between;
+  font-size: larger;
 }
 
 .links > a{
