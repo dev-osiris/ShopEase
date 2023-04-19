@@ -3,7 +3,7 @@ import React from "react";
 function Item(props){
     return(
         <div className="item-card">
-            <img className="image" src={require(`./images/${props.product.image}.png`)} />
+            <img className="image" src={require(`./images/${props.product.image}.jpg`)} />
             <div className="item-info">
                 <div>{props.product.brand}</div>
                 <div>{props.product.model}</div>

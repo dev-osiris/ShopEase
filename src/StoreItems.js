@@ -2,16 +2,23 @@ const itemList = [
     {
         brand: "Lenovo",
         model: "Yoga",
-        price: 130000,
+        price: 110000,
         qty: 0,
-        image: "Lenovo-Yoga",
+        image: "Lenovo_Yoga",
     },
     {
         brand: "Apple",
         model: "Macbook",
-        price: 256000,
+        price: 156000,
         qty: 0,
-        image: "Apple-Macbook",
+        image: "Apple_macbook",
+    },
+    {
+        brand: "HP",
+        model: "Pavilion",
+        price: 77000,
+        qty: 0,
+        image: "Hp_pavilion",
     }
 ];
 
