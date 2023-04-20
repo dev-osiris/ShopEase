@@ -75,7 +75,7 @@ a:hover{
 
 .add-item{
   height: 20px;
-  background-color: aquamarine;
+  width: 40px;
 }
 
 .image{
@@ -101,4 +101,14 @@ a:hover{
 
 .item-info > div{
   margin: 10% 0;
+}
+
+.add-to-cart-btn{
+  background-color: #1A120B;
+  color: white;
+  height: 25px;
+}
+
+.add-to-cart-btn:hover{
+  scale: 1.02;
 }

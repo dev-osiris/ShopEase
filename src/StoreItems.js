@@ -19,6 +19,20 @@ const itemList = [
         price: 77000,
         qty: 0,
         image: "Hp_pavilion",
+    },
+    {
+        brand: "Lenovo",
+        model: "Yoga",
+        price: 110000,
+        qty: 0,
+        image: "Lenovo_Yoga",
+    },
+    {
+        brand: "HP",
+        model: "Pavilion",
+        price: 77000,
+        qty: 0,
+        image: "Hp_pavilion",
     }
 ];
 

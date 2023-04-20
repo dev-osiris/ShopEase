@@ -5,9 +5,9 @@ function DisplayItems(props){
     return(
         <div className="items-container">
             {
-                props.items.map(item => {
+                props.items.map((item, index) => {
                     return(
-                        <Item product={item} Click={props.handleOnClick}/>
+                        <Item key={index} product={item} Click={props.handleOnClick} />
                     )
                 })
             }
