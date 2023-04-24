@@ -18,7 +18,7 @@ function Cart_Card(props){
                 <div className="item-info">
                     <div>{props.single_card.item.brand}</div>
                     <div>{props.single_card.item.model}</div>
-                    <div>₹{props.single_card.item.price}</div>
+                    <div>₹{props.single_card.item.price.toLocaleString("en-IN")}</div>
                     <div>Qty: {props.amount}</div>
                     <button 
                         className="add-to-cart-btn" 

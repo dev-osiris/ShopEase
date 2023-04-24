@@ -21,7 +21,7 @@ const CartInfo = (props) => {
         <div className="cart-info">
             <div>Products: {props.cart.length}</div>
             <div>Total qty: {qty}</div>
-            <div>Total Amount: {sum}</div>
+            <div>Total Amount: ₹{sum.toLocaleString("en-IN")}</div>
             <button className="checkout-btn">Checkout</button>
         </div>
     );

@@ -17,7 +17,7 @@ const Item = (props) => {
             <div className="item-info">
                 <div>{props.product.brand}</div>
                 <div>{props.product.model}</div>
-                <div>₹{props.product.price}</div>
+                <div>₹{props.product.price.toLocaleString("en-IN")}</div>
                 
                 <label>
                     <input type="number" 
