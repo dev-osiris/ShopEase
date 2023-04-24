@@ -48,6 +48,7 @@ a:hover{
 
 .side-padding{
   padding: 0 10%;
+  text-align: center;
 }
 
 .store-btn{
@@ -87,6 +88,14 @@ a:hover{
 
 .items-container{
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 5% 2%;
+  gap: 5%;
+}
+
+.store-container{
+  display: flex;
   flex-wrap: wrap;
   padding: 5% 2%;
   gap: 5%;
@@ -124,4 +133,44 @@ a:hover{
 
 .cart-card > div{
   display: flex;
+}
+
+.side-by-side{
+  display: flex;
+  background-color: #f4f4f4;
+  padding: 3% 0;
+}
+
+.cart-info{
+  border: solid green;
+  border-radius: 5%;
+  height: 10rem;
+  padding: 2%;
+  margin-top: 2%;
+  width: 90%;
+  text-align: left;
+  margin-right: 5%;
+  font-size: larger;
+}
+
+.checkout-btn{
+  border-radius: 10%;
+  background-color:green;
+  color: white;
+  font-size: large;
+  width: 5em;
+  height: 1.5em;
+  margin-top: 15%;
+}
+
+.checkout-btn:hover{
+  background-color:#f4f4f4;
+  color: green;
+  transition: 0.2s;
+}
+
+.home-img{
+  width: 41em;
+  height: 20em;
+  scale: 1.3;
 }

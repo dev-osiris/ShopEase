@@ -7,7 +7,7 @@ const Store = (props) => {
       <Item key={item.image + index} product={item} handleCartAdd={props.handleCartAdd} />
     ));
     
-    return <div className={"items-container"}>{itemCards}</div>;
+    return <div className={"store-container"}>{itemCards}</div>;
 
 }
 

@@ -13,11 +13,8 @@ const Cart = (props) => {
 
     else{
         content = (
-            <div>
-
-                <div className="items-container" style={{padding: "0 10%"}}>
-                <CartInfo cart={props.cart} />
-
+            <div className="side-by-side">
+                <div className="items-container" style={{padding: "0 5%"}}>
                 {
                     props.cart.map((card, index) => {
                         return(
@@ -33,6 +30,8 @@ const Cart = (props) => {
                     })
                 }
                 </div>
+
+                <CartInfo className="cart-info" cart={props.cart} />
             </div>
         );
     }
