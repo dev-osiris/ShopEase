@@ -4,8 +4,6 @@ const Item = (props) => {
     const [num, setnum] = useState(0);
 
     const handleOnClick = () => {
-        console.log("add to cart clicked");
-        // console.log(props.product);
 
         if(num > 0){
             props.handleCartAdd(props.product, num);
