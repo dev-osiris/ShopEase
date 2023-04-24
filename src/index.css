@@ -100,7 +100,7 @@ a:hover{
 }
 
 .item-info > div{
-  margin: 10% 0;
+  margin: 7% 0;
 }
 
 .add-to-cart-btn{
@@ -117,7 +117,7 @@ a:hover{
   display: flex;
   flex-direction: column;
   width: 550px;
-  height: 250px;
+  height: 240px;
   background-color: #e3e1e1;
   margin: 2% 0;
 }

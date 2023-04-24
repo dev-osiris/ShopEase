@@ -1,5 +1,15 @@
+import { useState } from "react";
+
 function Cart_Card(props){
     console.log("inside cart_card.js", props.amount);
+    const [a, seta] = useState(0);
+
+    const handleRemoveBtn = () => {
+        let newCart = [...props.cart]; //remember to not make a copy of cart[] as it wouldn't trigger UI update.
+        newCart.splice(props.index, 1); //remove one element at props.index
+        props.setCart(newCart);
+        seta(a + 1);
+    }
 
     const content = (
         <div className="cart-card">
@@ -8,8 +18,13 @@ function Cart_Card(props){
                 <div className="item-info">
                     <div>{props.single_card.item.brand}</div>
                     <div>{props.single_card.item.model}</div>
-                    <div>{props.single_card.item.price}</div>
-                    <div>{props.amount}</div>
+                    <div>₹{props.single_card.item.price}</div>
+                    <div>Qty: {props.amount}</div>
+                    <button 
+                        className="add-to-cart-btn" 
+                        onClick={handleRemoveBtn}>
+                        Remove
+                    </button>
                 </div>
             </div>
         </div>
