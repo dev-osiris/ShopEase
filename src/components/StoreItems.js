@@ -20,20 +20,20 @@ const itemList = [
         qty: 0,
         image: "Hp_pavilion",
     },
-    {
-        brand: "Dell",
-        model: "Latitude",
-        price: 65000,
-        qty: 0,
-        image: "Dell_Latitude",
-    },
-    {
-        brand: "Asus",
-        model: "Zenbook",
-        price: 90000,
-        qty: 0,
-        image: "Asus_Zenbook",
-    }
+    // {
+    //     brand: "Lenovo",
+    //     model: "Yoga",
+    //     price: 110000,
+    //     qty: 0,
+    //     image: "Lenovo_Yoga",
+    // },
+    // {
+    //     brand: "HP",
+    //     model: "Pavilion",
+    //     price: 77000,
+    //     qty: 0,
+    //     image: "Hp_pavilion",
+    // }
 ];
 
 export default itemList;

@@ -1,22 +1,23 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import dataList from "../StoreItems" ;
-import DisplayItems from "./DisplayItems";
+import Item from "./Item";
 
-const Store = () => {
-  const [itemList, setItemList] = useState([]);
-  const [item, setItem] = useState("");
+const Store = (props) => {
+  const [itemList, setItemList] = useState(dataList);
 
-  function addItem(e){
-    console.log("added one item");
-    let val = document.getElementsByClassName("add-item")[1].parentElement.parentElement;
-    console.log(val);
-  }
+  // return (
+  //   <div className="side-padding">
+  //     <DisplayItems items={itemLIst} handleCartAdd={props.handleCartAdd} />
+  //   </div> 
+  // );
 
-  return (
-    <div className="side-padding">
-      <DisplayItems items={dataList} handleOnClick={addItem} />
-    </div>
-  );
+  
+  const itemCards = itemList.map((item, index) => (
+      <Item key={item.image + index} product={item} handleCartAdd={props.handleCartAdd} />
+    ));
+    
+    return <div className={"items-container"}>{itemCards}</div>;
+
 }
 
 export default Store;

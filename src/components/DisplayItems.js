@@ -7,10 +7,12 @@ function DisplayItems(props){
             {
                 props.items.map((item, index) => {
                     return(
-                        <Item key={index} product={item} Click={props.handleOnClick} />
+                        <div key={item.image + index}>
+                            <Item product={item} handleCartAdd={props.handleCartAdd} />
+                        </div> 
                     )
                 })
-            }
+            } 
         </div>
     )
 }

@@ -1,15 +1,21 @@
 import React, { useState } from "react";
 
-function Item(props){
+const Item = (props) => {
     const [num, setnum] = useState(0);
 
-    function handleOnChange(){
+    const handleOnClick = () => {
+        console.log("add to cart clicked");
+        // console.log(props.product);
 
+        if(num > 0){
+            props.handleCartAdd(props.product, num);
+        }
+        setnum(0);
     }
 
-    return(
+    const content = (
         <div className="item-card">
-            <img className="image" src={require(`./images/${props.product.image}.jpg`)} />
+            <img className="image" src={require(`./images/${props.product.image}.jpg`)} alt="laptop" />
             <div className="item-info">
                 <div>{props.product.brand}</div>
                 <div>{props.product.model}</div>
@@ -17,18 +23,20 @@ function Item(props){
                 
                 <label>
                     <input type="number" 
-                        className="add-item"  
+                        className="add-item" 
                         value={num}
                         max={5}
                         min={0}
                         onChange={e => setnum(e.target.value)}/>
                         
                     &nbsp;
-                    <button className="add-to-cart-btn" onClick={props.Click}>Add to cart</button> 
+                    <button className="add-to-cart-btn" onClick={handleOnClick}>Add to cart</button>
                 </label>
             </div>
         </div>
     );
+
+    return content;
 }
 
 export default Item;
