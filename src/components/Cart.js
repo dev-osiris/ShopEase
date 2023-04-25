@@ -7,7 +7,9 @@ const Cart = (props) => {
     //cart is empty
     if(props.cart.length === 0){
         content = (
-            <div><h2>Cart empty, add some items from store to see here.</h2></div>
+            <div style={{paddingTop: "20%"}}>
+                <h2>Cart empty, add some items from store to see here.</h2>
+            </div>
         )
     }
 
