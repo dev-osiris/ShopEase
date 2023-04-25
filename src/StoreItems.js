@@ -28,7 +28,38 @@ const itemList = [
         model: "Zenbook",
         price: 90000,
         image: "Asus_Zenbook",
+    },
+    {
+        brand: "Microsoft",
+        model: "Surface laptop",
+        price: 98999,
+        image: "Microsoft_Surface"
+    },
+    {
+        brand: "Lenovo",
+        model: "Ideapad S340",
+        price: 59990,
+        image: "Lenovo_Ideapad"
+    },
+    {
+        brand: "Huawei",
+        model: "MateBokk X Pro",
+        price: 119990,
+        image: "Huawei_Matebook"
+    },
+    {
+        brand: "Acer",
+        model: "Nitro 5",
+        price: 64990,
+        image: "Acer_Nitro"
+    },
+    {
+        brand: "Dell",
+        model: "Inspirion i5",
+        price: 51990,
+        image: "Dell_Inspirion"
     }
+
 ];
 
 export default itemList;
