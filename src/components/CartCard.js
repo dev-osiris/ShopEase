@@ -14,8 +14,8 @@ function Cart_Card(props){
     const content = (
         <div className="cart-card">
             <div>
-                <img className="image" src={require(`./images/${props.single_card.item.image}.jpg`)} alt="laptop" />
-                <div className="item-info">
+                <img className="laptop-image" src={require(`./images/${props.single_card.item.image}.jpg`)} alt="laptop" />
+                <div className="item-card-info" >
                     <div>{props.single_card.item.brand}</div>
                     <div>{props.single_card.item.model}</div>
                     <div>₹{props.single_card.item.price.toLocaleString("en-IN")}</div>

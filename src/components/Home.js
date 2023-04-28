@@ -1,4 +1,3 @@
-
 const Home = () => {
     return (
       <div className="side-padding Home-text">
@@ -17,7 +16,7 @@ const Home = () => {
             </p>
 
             <a style={{display:"contents"}} href="/store">
-              <button className="store-btn">Shop Now</button>
+              <button className="shop-now-btn">Shop Now</button>
             </a>
           </div>
 

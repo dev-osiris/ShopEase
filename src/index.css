@@ -7,11 +7,6 @@ body {
   background-color: #ececd2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 .navbar {
   display: flex;
   padding: 1.5% 10%;
@@ -30,13 +25,13 @@ code {
   width: 13rem;
 }
 
+/* links in navbar: Home Store Cart */
 .links{
   display: flex;
   margin: 2% 5% 0 auto;
   justify-content: space-between;
   font-size: larger;
 }
-
 .links > a{
   margin: 0 10%;
   color: white;
@@ -46,17 +41,18 @@ a:link{
   /* removes underline from hyperlinks */
   text-decoration: none;
 }
-
 a:hover{
   color: #e3e1e1;
 }
 
+/* applies to every component except navbar */
 .side-padding{
   padding: 0 10%;
   text-align: center;
 }
 
-.store-btn{
+/* Shop-now button on Home page */
+.shop-now-btn{
   border-radius: 10%;
   background-color:#1A120B;
   color: white;
@@ -64,15 +60,15 @@ a:hover{
   width: 6.5em;
   height: 2.5em;
 }
-
-.store-btn:hover{
+.shop-now-btn:hover{
   background-color:#ececd2;
   color:#1A120B;
   transition: 0.3s;
   cursor: pointer;
 }
 
-.item-card{
+
+.store-item-card{
   display: flex;
   width: 550px;
   height: 240px;
@@ -80,18 +76,22 @@ a:hover{
   margin: 2% 0;
 }
 
+/* set qty of items in store */
 .add-item{
   height: 20px;
   width: 40px;
 }
 
-.image{
+
+/* images of laptops in store and cart */
+.laptop-image{
   max-width: 19em;
   min-width: 19em;
   max-height: 15em;
   min-height: 15em;
 }
 
+/* main displayer of laptop cards */
 .items-container{
   display: flex;
   flex-direction: column;
@@ -108,13 +108,23 @@ a:hover{
   background-color: #f4f4f4;
 }
 
+/* for store */
 .item-info{
   text-align: center;
   width: 100%;
   font-size: larger;
 }
-
 .item-info > div{
+  margin: 10% 0;
+}
+
+/* for cart */
+.item-card-info{
+  text-align: center;
+  width: 100%;
+  font-size: larger;
+}
+.item-card-info > div{
   margin: 7% 0;
 }
 
@@ -123,7 +133,6 @@ a:hover{
   color: white;
   height: 25px;
 }
-
 .add-to-cart-btn:hover{
   scale: 1.02;
   cursor: pointer;
@@ -137,7 +146,6 @@ a:hover{
   background-color: #e3e1e1;
   margin: 2% 0;
 }
-
 .cart-card > div{
   display: flex;
 }
@@ -169,7 +177,6 @@ a:hover{
   height: 1.5em;
   margin-top: 15%;
 }
-
 .checkout-btn:hover{
   background-color:#f4f4f4;
   color: green;
@@ -177,6 +184,7 @@ a:hover{
   cursor: pointer;
 }
 
+/* home laptop image */
 .home-img{
   width: 28vw;
   height: 25vw;

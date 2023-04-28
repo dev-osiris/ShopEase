@@ -12,8 +12,8 @@ const Item = (props) => {
     }
 
     const content = (
-        <div className="item-card">
-            <img className="image" src={require(`./images/${props.product.image}.jpg`)} alt="laptop" />
+        <div className="store-item-card">
+            <img className="laptop-image" src={require(`./images/${props.product.image}.jpg`)} alt="laptop" />
             <div className="item-info">
                 <div>{props.product.brand}</div>
                 <div>{props.product.model}</div>
