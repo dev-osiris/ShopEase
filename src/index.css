@@ -20,19 +20,19 @@ code {
 }
 
 .title{
-  font-size: 35px;
+  font-size: 2rem;
   color: white;
   margin-top: 1%;
 }
 
 .title-image{
-  height: 1.5em;
-  width: 5.5em;
+  height:3rem;
+  width: 13rem;
 }
 
 .links{
   display: flex;
-  margin: 2% 5% 0 70%;
+  margin: 2% 5% 0 auto;
   justify-content: space-between;
   font-size: larger;
 }
@@ -69,6 +69,7 @@ a:hover{
   background-color:#ececd2;
   color:#1A120B;
   transition: 0.3s;
+  /* cursor: pointer; */
 }
 
 .item-card{
@@ -125,6 +126,7 @@ a:hover{
 
 .add-to-cart-btn:hover{
   scale: 1.02;
+  cursor: pointer;
 }
 
 .cart-card{
@@ -172,11 +174,12 @@ a:hover{
   background-color:#f4f4f4;
   color: green;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .home-img{
-  width: 41em;
-  height: 20em;
+  width: 28vw;
+  height: 25vw;
   scale: 1.3;
 }
 
