@@ -69,7 +69,7 @@ a:hover{
   background-color:#ececd2;
   color:#1A120B;
   transition: 0.3s;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .item-card{
