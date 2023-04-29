@@ -5,7 +5,7 @@ const Home = () => {
 
         <div className="side-by-side" style={{backgroundColor: "#ececd2", textAlign: "left"}}>
           <div style={{paddingTop: "1em", display: "grid"}}>
-            <p>
+            <p className="home-text">
               Welcome to shopEase We understand the importance of having a reliable
               and efficient laptop, whether you're a student, professional, or simply need a device
               for entertainment purposes. 

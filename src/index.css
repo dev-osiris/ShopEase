@@ -1,16 +1,26 @@
+:root{
+  --primary-bg-color: #ececd2;
+  --store-bg-color: #f4f4f4;
+  --card-bg-color: #e3e1e1;
+  --navbar-bg-color: #1A120B;
+
+  --card-width: 33rem;
+  --card-height: 15rem;
+}
+
 body {
   margin: 0;
   font-family: 'Raleway', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ececd2;
+  background-color: var(--primary-bg-color);
 }
 
 .navbar {
   display: flex;
   padding: 1.5% 10%;
-  background-color: #1A120B;
+  background-color: var(--navbar-bg-color);
   color: white;
 }
 
@@ -42,7 +52,7 @@ a:link{
   text-decoration: none;
 }
 a:hover{
-  color: #e3e1e1;
+  color: var(--card-bg-color);
 }
 
 /* applies to every component except navbar */
@@ -54,7 +64,7 @@ a:hover{
 /* Shop-now button on Home page */
 .shop-now-btn{
   border-radius: 10%;
-  background-color:#1A120B;
+  background-color: var(--navbar-bg-color);
   color: white;
   font-size: large;
   width: 6.5em;
@@ -62,7 +72,7 @@ a:hover{
 }
 .shop-now-btn:hover{
   background-color:#ececd2;
-  color:#1A120B;
+  color: var(--navbar-bg-color);
   transition: 0.3s;
   cursor: pointer;
 }
@@ -70,9 +80,9 @@ a:hover{
 
 .store-item-card{
   display: flex;
-  width: 550px;
-  height: 240px;
-  background-color: #e3e1e1;
+  width: var(--card-width);
+  height: var(--card-height);
+  background-color: var(--card-bg-color);
   margin: 2% 0;
 }
 
@@ -105,7 +115,8 @@ a:hover{
   flex-wrap: wrap;
   padding: 5% 2%;
   gap: 5%;
-  background-color: #f4f4f4;
+  background-color: var(--store-bg-color);
+  background-color: ;
 }
 
 /* for store */
@@ -129,7 +140,7 @@ a:hover{
 }
 
 .add-to-cart-btn{
-  background-color: #1A120B;
+  background-color: var(--navbar-bg-color);
   color: white;
   height: 25px;
 }
@@ -141,9 +152,9 @@ a:hover{
 .cart-card{
   display: flex;
   flex-direction: column;
-  width: 550px;
-  height: 240px;
-  background-color: #e3e1e1;
+  width: var(--card-width);
+  height: var(--card-height);
+  background-color: var(--card-bg-color);
   margin: 2% 0;
 }
 .cart-card > div{
@@ -152,7 +163,7 @@ a:hover{
 
 .side-by-side{
   display: flex;
-  background-color: #f4f4f4;
+  background-color: var(--store-bg-color);
   padding: 3% 0;
 }
 
@@ -178,7 +189,7 @@ a:hover{
   margin-top: 15%;
 }
 .checkout-btn:hover{
-  background-color:#f4f4f4;
+  background-color: var(--store-bg-color);
   color: green;
   transition: 0.2s;
   cursor: pointer;
@@ -190,4 +201,3 @@ a:hover{
   height: 25vw;
   scale: 1.3;
 }
-
