@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -9,17 +9,17 @@ const Navbar = () => {
             </a>
 
             <div className="links">
-                <Link to="/">
+                <NavLink to="/" className={({ isActive }) => isActive ? "active-link" : "pending-link" }>
                     Home
-                </Link>
+                </NavLink>
 
-                <Link to="/store">
+                <NavLink to="/store" className={({ isActive }) => isActive ? "active-link" : "pending-link" }>
                     Store
-                </Link>
+                </NavLink>
 
-                <Link to="/cart">
+                <NavLink to="/cart" className={({ isActive }) => isActive ? "active-link" : "pending-link" }>
                     Cart
-                </Link>
+                </NavLink>
             </div>
         </div>
     );

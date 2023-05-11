@@ -3,6 +3,7 @@
   --store-bg-color: #f4f4f4;
   --card-bg-color: #e3e1e1;
   --navbar-bg-color: #1A120B;
+  --light-grey: #c6c6c6;
 
   --card-width: 33rem;
   --card-height: 15rem;
@@ -42,16 +43,17 @@ body {
   justify-content: space-between;
   font-size: larger;
 }
-.links > a{
-  margin: 0 10%;
+.active-link{
   color: white;
-}
-
-a:link{
-  /* removes underline from hyperlinks */
+  margin: 0 10%;
   text-decoration: none;
 }
-a:hover{
+.pending-link{
+  color: var(--light-grey);
+  margin: 0 10%;
+  text-decoration: none;
+}
+.pending-link:hover{
   color: var(--card-bg-color);
 }
 
@@ -116,7 +118,6 @@ a:hover{
   padding: 5% 2%;
   gap: 5%;
   background-color: var(--store-bg-color);
-  background-color: ;
 }
 
 /* for store */
@@ -201,3 +202,4 @@ a:hover{
   height: 25vw;
   scale: 1.3;
 }
+
