@@ -1,6 +1,6 @@
 const Home = () => {
     return (
-      <div className="side-padding Home-text">
+      <div className="side-padding" style={{textAlign: 'left'}}>
         <h1>To buy exclusive laptops with a wide variety of brands click now!</h1>
 
         <div className="side-by-side" style={{backgroundColor: "#ececd2", textAlign: "left"}}>

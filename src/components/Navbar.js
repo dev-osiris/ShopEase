@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ searchText, setSearchText }) => {
     return (
         <div className="navbar">
             <a className="title" href="/">
@@ -14,9 +14,10 @@ const Navbar = () => {
                   <input 
                     className="search-box" 
                     type="search" 
-                    placeholder="Search" 
+                    placeholder="Search Laptops" 
                     aria-label="Search"
-                    // onChange={(e) => props.setSearchText(e.target.value)} 
+                    value={searchText}
+                    onChange={(e) => setSearchText(e.target.value)} 
                   />
                 </form>
               }
