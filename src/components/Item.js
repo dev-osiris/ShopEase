@@ -4,7 +4,6 @@ const Item = (props) => {
     const [num, setnum] = useState(0);
 
     const handleOnClick = () => {
-
         if(num > 0){
             props.handleCartAdd(props.product, num);
         }

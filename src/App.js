@@ -19,7 +19,6 @@ const App = () => {
 
       <div className="side-padding">
 
-
         <Routes>
           <Route path="/" element={<Home />} />
 
