@@ -20,9 +20,11 @@ body {
 
 .navbar {
   display: flex;
-  padding: 1.5% 10%;
+  padding: 1% 10%;
   background-color: var(--navbar-bg-color);
   color: white;
+  position: sticky;
+  top: 0;
 }
 
 .title{
