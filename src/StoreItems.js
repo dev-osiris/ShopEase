@@ -31,9 +31,9 @@ const itemList = [
     },
     {
         brand: "Microsoft",
-        model: "Surface laptop",
+        model: "Surface Go",
         price: 98999,
-        image: "Microsoft_Surface"
+        image: "Microsoft_SurfaceGo"
     },
     {
         brand: "Lenovo",
@@ -58,6 +58,12 @@ const itemList = [
         model: "Inspirion i5",
         price: 51990,
         image: "Dell_Inspirion"
+    },
+    {
+        brand: "Microsoft",
+        model: "Surface pro 9",
+        price: 113500,
+        image: "Microsoft_SurfacePro9"
     }
 
 ];
