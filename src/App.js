@@ -5,6 +5,7 @@ import Store from "./components/Store";
 import Cart from "./components/Cart";
 import { useState, useEffect } from "react";
 import postList from "./StoreItems";
+import NotFound from "./components/NotFound";
 
 const App = () => {
   const [cart, setCart] = useState([]);
@@ -36,7 +37,9 @@ const App = () => {
 
           <Route path="/cart" element={<Cart handleCartAdd={handleCartAdd} cart={cart} setCart={setCart} />} />
 
+          <Route path="*" element={<NotFound />} />
         </Routes>
+        
       </div>
     </BrowserRouter>
   );

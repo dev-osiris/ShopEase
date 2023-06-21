@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 function Cart_Card(props){
-    console.log("inside cart_card.js", props.amount);
     const [a, seta] = useState(0);
 
     const handleRemoveBtn = () => {
