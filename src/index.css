@@ -159,6 +159,11 @@ body {
   scale: 1.02;
   cursor: pointer;
 }
+.add-to-cart-btn:disabled, button[disabled]{
+  cursor: not-allowed;
+  scale: 1;
+  background-color: rgb(134, 134, 134);
+}
 
 .cart-card{
   display: flex;
@@ -188,6 +193,10 @@ body {
   text-align: left;
   margin-right: 5%;
   font-size: larger;
+}
+
+#cart-len-icon{
+  margin-left: 5px;
 }
 
 .checkout-btn{

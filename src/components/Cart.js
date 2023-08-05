@@ -22,11 +22,12 @@ const Cart = (props) => {
                         return(
                             <div key={card.item.image + index}>
                                 <CartCard 
-                                single_card={card} 
-                                amount={card.amount} 
-                                index={index}  
-                                cart={props.cart} 
-                                setCart={props.setCart} /> 
+                                    single_card={card} 
+                                    amount={card.amount} 
+                                    index={index}  
+                                    cart={props.cart} 
+                                    setCart={props.setCart} 
+                                /> 
                             </div>
                         )
                     })

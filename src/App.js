@@ -12,8 +12,8 @@ const App = () => {
   const [filteredPosts, setFilteredPosts] = useState([]);
   const [searchText, setSearchText] = useState('');
 
-  const handleCartAdd = (item, amount) => {
-    setCart([...cart, {item: item, amount: amount}]);
+  const handleCartAdd = (item, qty) => {
+    setCart([...cart, {item: item, amount: qty}]);
   }
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const App = () => {
   
   return (
     <BrowserRouter>
-      <Navbar searchText={searchText} setSearchText={setSearchText} />
+      <Navbar searchText={searchText} setSearchText={setSearchText} cartLen={cart.length} />
 
       <div className="side-padding">
 

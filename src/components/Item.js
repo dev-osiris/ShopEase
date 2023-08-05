@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Item = (props) => {
     const [num, setnum] = useState(0);
@@ -9,6 +9,7 @@ const Item = (props) => {
         }
         setnum(0);
     }
+
 
     const content = (
         <div className="store-item-card">
@@ -31,7 +32,12 @@ const Item = (props) => {
                         </form>
                         
                     &nbsp;
-                    <button className="add-to-cart-btn" onClick={handleOnClick}>Add to cart</button>
+                    <button 
+                        className="add-to-cart-btn" 
+                        onClick={handleOnClick}
+                        >
+                            Add to cart
+                    </button>
                 </label>
             </div>
         </div>
