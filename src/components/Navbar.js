@@ -10,7 +10,8 @@ const Navbar = ({ searchText, setSearchText }) => {
             </a>
 
             {useLocation().pathname === '/store' && 
-                <form className="search-form" role="search">
+                //preventDefualt prevents the page to reload on hitting enter and losing the search results.
+                <form onSubmit={(e) => e.preventDefault()} className="search-form" role="search">
                   <input 
                     className="search-box" 
                     type="search" 
