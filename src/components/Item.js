@@ -19,12 +19,16 @@ const Item = (props) => {
                 <div>₹{props.product.price.toLocaleString("en-IN")}</div>
                 
                 <label>
-                    <input type="number" 
-                        className="add-item" 
-                        value={num}
-                        max={5}
-                        min={0}
-                        onChange={e => setnum(e.target.value)}/>
+                        <form>        
+                            <select id="item-dropdown" onChange={(e) => setnum(e.target.value)}>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </form>
                         
                     &nbsp;
                     <button className="add-to-cart-btn" onClick={handleOnClick}>Add to cart</button>
